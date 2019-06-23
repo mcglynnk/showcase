@@ -3,35 +3,60 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/showcase/blogs/</loc>
+    <loc>https://mcglynnk.github.io/showcase/categories/</loc>
+    <lastmod>2017-10-31T22:42:51-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mcglynnk.github.io/showcase/categories/</loc>
+    <lastmod>2017-10-31T22:42:51-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mcglynnk.github.io/showcase/</loc>
+    <lastmod>2017-10-31T22:42:51-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mcglynnk.github.io/showcase/blogs/genome-assemblies-project/</loc>
+    <lastmod>2017-10-31T22:42:51-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mcglynnk.github.io/showcase/blogs/</loc>
     <lastmod>2017-10-31T22:27:21-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/showcase/categories/</loc>
+    <loc>https://mcglynnk.github.io/showcase/blogs/x/</loc>
     <lastmod>2017-10-31T21:28:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mcglynnk.github.io/showcase/blogs/x/</loc>
+    <lastmod>2017-10-31T21:28:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mcglynnk.github.io/showcase/blogs/rebase/</loc>
+    <lastmod>2017-10-31T21:28:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mcglynnk.github.io/showcase/blogs/genome-assemblies-project-n.nb/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/showcase/categories/</loc>
-    <lastmod>2017-10-31T21:28:43-05:00</lastmod>
+    <loc>https://mcglynnk.github.io/showcase/blogs/genome-assemblies-query.nb/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/showcase/</loc>
-    <lastmod>2017-10-31T21:28:43-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/showcase/blogs/ipsum/</loc>
-    <lastmod>2017-10-31T21:28:43-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/showcase/tags/</loc>
+    <loc>https://mcglynnk.github.io/showcase/tags/</loc>
     <priority>0</priority>
   </url>
   
