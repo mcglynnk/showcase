@@ -37,7 +37,7 @@ Briefly, you'll need to make two repositories (this is because of how hugo sites
   - Git add, commit and push your local files to the remote repo
     
 ### Repo #2:       
-If forty will be your main website, name this repo yourusername.github.io.  If forty will be a page on another website (like  mine, I named it showcase), name it whatever you like (you'll see why in a minute).  In the config.toml file, set your website url to "https://yourusername.github.io/" or "https://yourothersite.github.io/showcase/".        
+If forty will be your main website, name this repo yourusername.github.io.  If forty will be a page on another website (like  mine, I named it showcase), name it whatever you like (you'll see why in a minute).  In the config.toml file, set your website url to "https://yourusername.github.io/" or "https://yourothersite.github.io/showcase/". This repo holds just the html files built for your website.          
             
 Run:   
 ```git submodule add -b master git@github.com:<USERNAME>/<USERNAME.github.io OR (in my case) showcase>.git public```   
@@ -61,7 +61,7 @@ git push origin master
 Your site should now be live at your url.    
 You can automate this part by copying my deploy.sh file, see this site again: https://gohugo.io/hosting-and-deployment/hosting-on-github/.      
        
-Whenever you update your site content in your local forty-fork folder, you'll need to run ```hugo``` again, then ```git submodule update --merge``` and push everything to each remote repo.             
+Whenever you update your site content in your local forty-fork folder, you'll need to run ```hugo``` again to update the html files in the public folder, then ```git submodule update --merge``` and push everything to each remote repo.             
      
      
 One more thing... At first, my showcase site built just fine locally but did not render any css and js when I sent it live.  This is because of how the forty theme is built. Github does not allow http:/ addresses in the css content or any direct http:// or https:// references. Using a text editor like sublime text, open the forty-fork folder, search all files for http://, and find and replace with https://.  Then search for direct references to your url and replace them. For example, find all https://yourusername.github.io/showcase/ and replace with /showcase/.  Now the site should work!      
