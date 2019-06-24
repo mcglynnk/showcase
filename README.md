@@ -47,18 +47,21 @@ At this point, you can edit your site locally. Change anything you want in confi
 
 ### Deploy site
 When you're ready to send the site live, first check that your remotes point to the right place.      
-In the console, go to your forty-fork folder and run ```git remote -v```. It should point to  https://github.com/yourusername.forty-fork.git.
-From here, ```cd public``` and run ```git remote -v``` again.  This should point to the url you named in the config.toml file.
-
+In the console, go to your forty-fork folder and run ```git remote -v```. It should point to  https://github.com/yourusername.forty-fork.git.      
+From here, ```cd public``` and run ```git remote -v``` again.  This should point to the url you named in the config.toml file.     
+       
 Then run:   
 ```hugo    
 cd public    
 git add .    
 git commit -m "your commit message"    
-git push origin master```     
+git push origin master
+```     
       
 Your site should now be live at your url.    
-You can automate this part by copying my deploy.sh file, see this site again: https://gohugo.io/hosting-and-deployment/hosting-on-github/.
+You can automate this part by copying my deploy.sh file, see this site again: https://gohugo.io/hosting-and-deployment/hosting-on-github/.      
+       
+Whenever you update your site content in your local forty-fork folder, you'll need to run ```hugo``` again, then ```git submodule update --merge``` and push everything to each remote repo.
     
     
 One more thing... At first, my showcase site built just fine locally but did not render any css and js when I sent it live.  This is because of how the forty theme is built. Github does not allow http:/ addresses in the css content or any direct http:// or https:// references. Using a text editor like sublime text, open the forty-fork folder, search all files for http://, and find and replace with https://.  Then search for direct references to your url and replace them. For example, find all https://yourusername.github.io/showcase/ and replace with /showcase/.  Now the site should work!      
